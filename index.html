@@ -9,14 +9,20 @@
   <link rel="stylesheet" href="style.css">
 
   <title>Maratona Explorer</title>
+
+  <script defer src="./index.js"></script>
 </head>
 <body>
   <main>
-    <img src="https://gist.githubusercontent.com/maykbrito/0acdf4ce919838ffed50915a31fc5b23/raw/6f4dd01ec3116428ec4c99255944cb9ac7927590/cristal-ball.svg" alt="Imagem de uma bola de cristal">
+    <img alt="Imagem de uma bola de cristal" src="https://gist.githubusercontent.com/maykbrito/0acdf4ce919838ffed50915a31fc5b23/raw/6f4dd01ec3116428ec4c99255944cb9ac7927590/cristal-ball.svg"/>
     <h1>Vou revelar o seu destino</h1>
     <p>Clique em fazer pergunta para que seu destino seja revelado</p>
-    <input type="text" placeholder="Digite sua pergunta"/>
-    <button>Fazer pergunta</button>
+    <input id="question" placeholder="Digite sua pergunta" type="text"/>
+    <button onclick="handleQuestionResolve()">Fazer pergunta</button>
+    <div id="response">
+      <p>Aguardando sua pergunta.</p>
+      <p>Não há pergunta sem resposta!</p>
+    </div>
   </main>
 </body>
 </html>

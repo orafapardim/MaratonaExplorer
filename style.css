@@ -55,3 +55,12 @@ button:hover {
   cursor: pointer;
   filter: brightness(1.2);
 }
+
+#response {
+  transition: opacity 10s;
+}
+
+#response p {
+  color: #fff;
+  margin-bottom: .5rem;
+}
